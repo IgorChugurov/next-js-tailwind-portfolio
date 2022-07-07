@@ -1,14 +1,6 @@
 import Image from "next/image";
 
-export const About = ({
-  profile,
-  pofileAlt,
-  subtitle,
-  title,
-  description,
-  technologies,
-  quickLinks,
-}) => {
+const About = ({ profile, pofileAlt, subtitle, title, description, technologies, quickLinks }) => {
   return (
     <div>
       <section className=" bg-zinc-800 p-10  lg:p-20">
@@ -35,13 +27,15 @@ export const About = ({
               Technologies
             </h3>
             <ul className="list-none space-y-1">
-              {technologies.map((tech) => {
-                return (
-                  <li key={tech} className="text-sm text-zinc-400">
-                    {tech}
-                  </li>
-                );
-              })}
+              {technologies &&
+                technologies.map &&
+                technologies.map((tech) => {
+                  return (
+                    <li key={tech} className="text-sm text-zinc-400">
+                      {tech}
+                    </li>
+                  );
+                })}
             </ul>
           </div>
           <div className="col-span-7 flex max-w-xl flex-col lg:col-span-2">
@@ -49,21 +43,23 @@ export const About = ({
               Quick Links
             </h3>
             <ul className="list-none space-y-1">
-              {quickLinks.map((link) => {
-                return (
-                  <li key={link.text} className="text-sm text-[#fbbf24]">
-                    <a
-                      className="hover:underline"
-                      href={link.href}
-                      target="_blank"
-                      title="Link to this page"
-                      rel="noopener noreferrer"
-                    >
-                      {link.text}
-                    </a>
-                  </li>
-                );
-              })}
+              {quickLinks &&
+                quickLinks.map &&
+                quickLinks.map((link) => {
+                  return (
+                    <li key={link.text} className="text-sm text-[#fbbf24]">
+                      <a
+                        className="hover:underline"
+                        href={link.href}
+                        target="_blank"
+                        title="Link to this page"
+                        rel="noopener noreferrer"
+                      >
+                        {link.text}
+                      </a>
+                    </li>
+                  );
+                })}
             </ul>
           </div>
         </div>
@@ -71,3 +67,4 @@ export const About = ({
     </div>
   );
 };
+export default About;

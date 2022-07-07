@@ -1,4 +1,6 @@
-import { Layout, About, PortfolioSection } from "./components";
+import Layout from "./components/Layout";
+import About from "./components/About";
+import PortfolioSection from "./components/PortfolioSection";
 const Homepage = () => {
   const technologies = [
     "TypeScript",

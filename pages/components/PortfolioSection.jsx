@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export const PortfolioSection = ({ title, logo, description, technologies, links, color }) => {
+const PortfolioSection = ({ title, logo, description, technologies, links, color }) => {
   return (
     <section>
       <header
@@ -28,36 +28,41 @@ export const PortfolioSection = ({ title, logo, description, technologies, links
             Technologies
           </h3>
           <ul className="list-none space-y-1">
-            {technologies.map((tech) => {
-              return (
-                <li key={tech} className="text-sm text-zinc-400">
-                  {tech}
-                </li>
-              );
-            })}
+            {technologies &&
+              technologies.map &&
+              technologies.map((tech) => {
+                return (
+                  <li key={tech} className="text-sm text-zinc-400">
+                    {tech}
+                  </li>
+                );
+              })}
           </ul>
         </div>
         <div className="col-span-7 flex max-w-xl flex-col lg:col-span-2">
           <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-zinc-50">Links</h3>
           <ul className="list-none space-y-1">
-            {links.map((link) => {
-              return (
-                <li key={link.text} className="text-sm" style={{ color }}>
-                  <a
-                    className="hover:underline"
-                    href={link.href}
-                    target="_blank"
-                    title="Link to this page"
-                    rel="noopener noreferrer"
-                  >
-                    {link.text}
-                  </a>
-                </li>
-              );
-            })}
+            {links &&
+              links.map &&
+              links.map((link) => {
+                return (
+                  <li key={link.text} className="text-sm" style={{ color }}>
+                    <a
+                      className="hover:underline"
+                      href={link.href}
+                      target="_blank"
+                      title="Link to this page"
+                      rel="noopener noreferrer"
+                    >
+                      {link.text}
+                    </a>
+                  </li>
+                );
+              })}
           </ul>
         </div>
       </div>
     </section>
   );
 };
+export default PortfolioSection;
