@@ -1,6 +1,7 @@
 import Layout from "./components/Layout";
 import About from "./components/About";
 import PortfolioSection from "./components/PortfolioSection";
+import Navbar from "./components/Navbar";
 const Homepage = () => {
   const technologies = [
     "TypeScript",
@@ -46,7 +47,7 @@ const Homepage = () => {
       color: "#eb3c27",
 
       description:
-        "Corporate website for the largest shopping and entertainment center in Ukraine.",
+        "Corporate website for the largest shopping and entertainment center based in Ukraine.",
       technologies: ["TypeScript", "JavaScript", "React, Next.js", "CSS, SCSS", "Tailwindcss"],
       links: [{ text: "Site", href: "https://blockbustermall.com.ua/" }],
     },
@@ -64,12 +65,13 @@ const Homepage = () => {
 
   return (
     <Layout>
+      <Navbar />
       <About
         profile="/igorchugurov.jpg"
         pofileAlt="Igor Chugurov"
         subtitle="Software Engineer"
         title="Igor Chugurov"
-        description={`I'm a full-stack developer in Ukrain. I have created and designed professional websites for clients ranging from big interprises, Photographers, entrepreneurs, and small businesses. I specialize in keeping visitors focused and interested. I have excellent knowledge of software development methodologies, frameworks, and Software Development Life Cycle.`}
+        description={`I'm a full-stack developer in Ukrain. I have created and designed professional websites for clients ranging from big enterprises, Photographers, entrepreneurs, and small businesses. I specialize in keeping clients focused and interested. I have excellent knowledge of software development methodologies, frameworks, and Software Development Life Cycle.`}
         technologies={technologies}
         quickLinks={quickLinks}
       />

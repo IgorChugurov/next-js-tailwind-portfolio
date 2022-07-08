@@ -6,15 +6,15 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <DefaultSeo
-        title="Frontend developer in Ukraine"
+        title="Frontend developer based in Ukraine"
         titleTemplate="Igor Chugurov | %s"
         defaultTitle="Software Engineer Igor Chugurov"
-        description="I'm frontend developer in Ukraine. I love to build web applications with modern technologies like  TypeScript, Next.js, React,
+        description="I'm frontend developer based in Ukraine. I love to build web applications with modern technologies like  TypeScript, Next.js, React,
         Tailwind, Express, Nestjs, MongoDB"
         openGraph={{
-          title: "Frontend developer in Ukraine",
+          title: "Frontend developer based in Ukraine",
           description:
-            "I'm frontend developer in Ukraine. I love to build web applications with modern technologies like  TypeScript, Next.js, React, Tailwind, Express, Nestjs, MongoDB",
+            "I'm frontend developer based in Ukraine. I love to build web applications with modern technologies like  TypeScript, Next.js, React, Tailwind, Express, Nestjs, MongoDB",
           type: "website",
           locale: "en_IE",
           url: "https://www.url.ie/",
