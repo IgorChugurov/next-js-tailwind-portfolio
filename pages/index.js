@@ -35,7 +35,7 @@ const Homepage = () => {
       logo: "/mebelmag.svg",
       color: "#561824",
 
-      description: `Marketplace for manufacturers and sellers of furniture. Close the dialog
+      description: `Marketplace for manufacturers and sellers of furniture.
         The goal of the project is to create a trading platform where Ukrainian furniture manufacturers will be represented. Creation of a unified catalog with a standard set of characteristics and characteristics for each category of goods.`,
       technologies: ["TypeScript", "JavaScript", "React, Next.js", "CSS, SCSS", "Tailwindcss"],
       links: [{ text: "Site", href: "https://mebel-mag.com.ua/" }],
