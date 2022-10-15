@@ -65,13 +65,12 @@ const Homepage = () => {
 
   return (
     <Layout>
-      <Navbar />
       <About
         profile="/igorchugurov.jpg"
         pofileAlt="Igor Chugurov"
         subtitle="Software Engineer"
         title="Igor Chugurov"
-        description={`I'm a full-stack developer in Ukrain. I have created and designed professional websites for clients ranging from big enterprises, Photographers, entrepreneurs, and small businesses. I specialize in keeping clients focused and interested. I have excellent knowledge of software development methodologies, frameworks, and Software Development Life Cycle.`}
+        description={`I'm a full-stack developer based in Ukrain. I have created and designed professional websites for clients ranging from big enterprises, Photographers, entrepreneurs, and small businesses. I specialize in keeping clients focused and interested. I have excellent knowledge of software development methodologies, frameworks, and Software Development Life Cycle.`}
         technologies={technologies}
         quickLinks={quickLinks}
       />
