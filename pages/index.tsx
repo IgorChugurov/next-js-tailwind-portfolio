@@ -69,7 +69,7 @@ const Homepage = ({ portfolioItems }: InferGetServerSidePropsType<typeof getServ
 
   return (
     <Layout>
-      {/* <Navbar /> */}
+      <Navbar />
       <About
         profile="/igorchugurov.jpg"
         pofileAlt="Igor Chugurov"

@@ -4,10 +4,14 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0   z-10 bg-gray-50">
       <div className={styles.navbarwrap}>
-        <div className="w-80">
-          <a>webdeal</a>
+        <div className="ml-2 w-40">
+          <div className={styles.button}>
+            <a href="https://www.upwork.com/freelancers/~01bc90966a856cf74c" target="_blank">
+              Hire me
+            </a>
+          </div>
         </div>
-        <div>
+        {/* <div>
           <a>Design</a>
         </div>
         <div className="flex w-96 justify-center">
@@ -16,7 +20,7 @@ const Navbar = () => {
             <a>Tw</a>
             <a>YouTube</a>
           </div>
-        </div>
+        </div> */}
       </div>
     </nav>
   );

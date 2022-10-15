@@ -7,10 +7,10 @@ const PortfolioSection = ({ title, logo, description, technologies, links, color
         className="flex justify-between pt-10 pr-10 pl-10 lg:pt-10 lg:pr-10 lg:pl-10"
         style={{ backgroundColor: color }}
       >
-        <h2 className="mb-3 self-end font-serif text-2xl text-zinc-50 sm:text-3xl lg:text-4xl">
+        <h2 className=" self-end font-serif text-2xl text-zinc-50 sm:text-3xl lg:text-4xl">
           {title}
         </h2>
-        <div className="mb-3 flex h-32 w-32 items-center justify-center bg-zinc-700">
+        <div className=" flex h-32 w-32 items-center justify-center bg-white">
           <div className="relative h-20 w-20">
             <Image src={logo} alt={title} layout="fill" objectFit="container" />
           </div>
@@ -46,7 +46,7 @@ const PortfolioSection = ({ title, logo, description, technologies, links, color
               links.map &&
               links.map(link => {
                 return (
-                  <li key={link.text} className="text-sm" style={{ color }}>
+                  <li key={link.text} className="text-sm text-[#fbbf24]">
                     <a
                       className="hover:underline"
                       href={link.href}

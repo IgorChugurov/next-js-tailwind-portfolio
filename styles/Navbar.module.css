@@ -1,3 +1,6 @@
 .navbarwrap {
   @apply flex flex-col items-center py-3 text-center sm:flex-row sm:justify-between xl:container xl:mx-auto;
 }
+.button {
+  @apply cursor-pointer rounded-2xl bg-green-500 py-3 text-white;
+}
