@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 const About = ({ profile, pofileAlt, subtitle, title, description, technologies, quickLinks }) => {
   return (
     <div>
@@ -29,7 +28,7 @@ const About = ({ profile, pofileAlt, subtitle, title, description, technologies,
             <ul className="list-none space-y-1">
               {technologies &&
                 technologies.map &&
-                technologies.map((tech) => {
+                technologies.map(tech => {
                   return (
                     <li key={tech} className="text-sm text-zinc-400">
                       {tech}
@@ -45,7 +44,7 @@ const About = ({ profile, pofileAlt, subtitle, title, description, technologies,
             <ul className="list-none space-y-1">
               {quickLinks &&
                 quickLinks.map &&
-                quickLinks.map((link) => {
+                quickLinks.map(link => {
                   return (
                     <li key={link.text} className="text-sm text-[#fbbf24]">
                       <a
