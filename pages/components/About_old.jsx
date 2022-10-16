@@ -66,4 +66,5 @@ const About = ({ profile, pofileAlt, subtitle, title, description, technologies,
     </div>
   );
 };
+
 export default About;
