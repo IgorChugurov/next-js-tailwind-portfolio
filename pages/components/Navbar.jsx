@@ -1,5 +1,5 @@
 import styles from "../../styles/Navbar.module.css";
-console.log(styles);
+
 const Navbar = () => {
   return (
     <nav className="sticky top-0   z-10 bg-gray-50">
